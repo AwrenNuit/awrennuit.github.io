@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aaron Rennaker Resume</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Aaron Rennaker Resume">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--link rel="icon" href="favicon.ico"-->
+		<link rel="stylesheet" href="prime_challenge.css">
+	</head>
+	<body>
+		<img id="myPic" src="pic.jpg">
+		<div id="myName">
+			Aaron Rennaker
+		</div>
+		<div id="myInfo">
+			4053 Washington St NE Columbia Heights, MN 55421
+			<br>
+			a.rennaker@yahoo.com
+			<br>
+			651-276-3461
+		</div>
+		<div id="myEdu">
+			<div class="head">
+				Education
+			</div>
+			<button class="tab">
+				<div class="eduHead">
+					&#8211 Associate of Science in Integrative Health & Healing (2016)
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="eduSchool">
+					Anoka Ramsey Community College
+					<br>
+					Cumulative GPA: 3.8
+				</div>
+			</div>
+			<button class="tab">
+				<div class="eduHead">
+					&#8211 Associate of Applied Science in Music Business (2009)
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="eduSchool">
+					Minnesota School of Business
+					<br>
+					Cumulative GPA: 3.5
+				</div>
+			</div>
+		</div>
+		<div id="myWork">
+			<div class="head">
+				Work Experience
+			</div>
+			<button class="tab">
+				<div class="workPlace">
+					&#8211 Spirit Lifters
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="workPos">
+					Independent Living Skills Coach
+					<br>
+					October 2018 - Present
+				</div>
+					<div class="workTasks">
+						<ul>
+							<li>Ensure clients schedule and keep appointments</li>
+							<li>Teach clients how to make important phone calls</li>
+							<li>Aid clients with filling out and submitting county paperwork</li>
+							<li>Assist clients with running errands</li>
+						</ul>
+					</div>
+			</div>
+			<button class="tab">
+				<div class="workPlace">
+					&#8211 Volunteers of America
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="workPos">
+					Resident Counselor
+					<br>
+					March 2017 - Present
+				</div>
+					<div class="workTasks">
+						<ul>
+							<li>Teach clients life skills necessary for independent living</li>
+							<li>Assist with managing and coordinating schedules for fourteen individuals</li>
+							<li>Provide help and support to residents in regards to personal and programming needs</li>
+							<li>Administer medication to the program participants</li>
+						</ul>
+					</div>
+			</div>
+			<button class="tab">
+				<div class="workPlace">
+					&#8211 Mystic Light Wellness
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="workPos">
+					Owner & Operator
+					<br>
+					May 2016 - Present
+				</div>
+					<div class="workTasks">
+						<ul>
+							<li>Provide hands-on energy healing for clients</li>
+							<li>Prepare class materials, instruct classes</li>
+							<li>Craft herbal remedies based on client needs</li>
+							<li>Educate clients on at-home self-care modalities</li>
+						</ul>
+					</div>
+			</div>
+			<button class="tab">
+				<div class="workPlace">
+					&#8211 LUSH Cosmetics
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="workPos">
+					Sales Ambassador
+					<br>
+					November 2014-March 2017, November 2017-January 2018 (Seasonal)
+				</div>
+					<div class="workTasks">
+						<ul>
+							<li>Demonstrated merchandise for customers</li>
+							<li>Completed customer consultations to find best products based on their needs</li>
+							<li>Lead Operations Team in ordering product, monthly inventories, and weekly shipments</li>
+							<li>Lead Training Team in developing new and existing employees</li>
+						</ul>
+					</div>
+			</div>
+			<button class="tab">
+				<div class="workPlace">
+					&#8211 REM Minnesota
+				</div>
+			</button>
+			<div class="dropDown">
+				<div class="workPos">
+					Direct Service Professional
+					<br>
+					December 2013-February 2015
+				</div>
+					<div class="workTasks">
+						<ul>
+							<li>Administered medication to vulnerable adults</li>
+							<li>Helped clients with social and personal issues</li>
+							<li>Maintained homes, cooked, and supervised activities</li>
+							<li>Maintained certifications in CPR, PIA, and MA</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<script>
+			var coll = document.getElementsByClassName("tab");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				content.style.maxHeight = null;
+				} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			});
+			}
+		</script>
+	</body>
+</html>
