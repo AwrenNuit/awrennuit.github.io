@@ -1,0 +1,96 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: linear-gradient(to bottom, #fffcdc, #d9a7c7);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 20px;
+	font-family: Verdana;
+}
+
+#myPic {
+	image-orientation: from-image;
+	box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 40%;
+	max-width: 200px;
+	height: auto;
+	float: right;
+	margin: 0 0 0 10px;
+}
+#myName {
+	font-size: 3rem;
+	font-weight: bold;
+	border-bottom: double black;
+	text-align: right;
+	margin-top: 50px;
+}
+
+#myInfo {
+	font-size: 0.8rem;
+	font-style: italic;
+	text-align: right;
+	padding-bottom: 20px;
+}
+
+#myEdu {
+	padding: 30px;
+}
+
+.head {
+	font-size: 1.8rem;
+	font-weight: bold;
+	border-bottom: 1px dashed black;
+	margin: 40px 0 10px 0;
+}
+
+.eduHead {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.eduSchool {
+	padding-bottom: 10px;
+}
+
+#myWork {
+	padding: 0 30px 30px 30px;
+}
+
+.workPlace {
+	font-size: 1.1rem;
+	font-weight: bold;
+	border
+}
+
+.workPos {
+	font-size: 0.9rem;
+	font-style: italic;
+}
+	
+ul {
+	margin: 8px 0 20px 0;
+}
+
+.tab {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+.active, .tab:hover {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+
+.dropDown {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
